@@ -103,6 +103,7 @@ def clone_repo(repo_url: str, repo_dir: str) -> None:
 def extract_code(repo_dir: str) -> Tuple[List[str], str]:
     """
     Create an index and extract content from code/text files in the repository.
+    Sample code from here: https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/use-cases/code
 
     Args:
         repo_dir (str): The directory of the cloned repository.
