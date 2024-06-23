@@ -1,0 +1,6 @@
+anthropic
+google-cloud-aiplatform
+gitpython
+magika
+streamlit
+vertexai
