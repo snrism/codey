@@ -36,8 +36,8 @@ with col1:
         st.session_state.selected_model = 'Gemini AI'
     st.session_state.selected_model = st.selectbox(
         "Select AI Model:",
-        ["Gemini AI", "Anthropic Claude AI"],
-        index=["Gemini AI", "Anthropic Claude AI"].index(st.session_state.selected_model)
+        ["Anthropic Claude AI", "Gemini AI"],
+        index=["Anthropic Claude AI", "Gemini AI"].index(st.session_state.selected_model)
     )
 
 with col2:

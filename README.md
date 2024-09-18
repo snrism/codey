@@ -19,8 +19,6 @@ A Streamlit application to analyze GitHub repositories and provide coding assist
 - Streamlit
 - Anthropic
 - Git
-- Google Cloud Platform (GCP) account
-- GCP project with Vertex AI enabled
 
 ### Installation
 
@@ -42,7 +40,14 @@ A Streamlit application to analyze GitHub repositories and provide coding assist
         export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/service-account-file.json"
         ```
 
-4. Set up your GCP project details in the `config.py` file:
+4. Set up your Anthropic API Key:
+    - Obtain your Anthropic [API key](https://console.anthropic.com/settings/keys) from the Anthropic platform.
+    - Set the environment variable `ANTHROPIC_API_KEY` to your Anthropic API key:
+        ```sh
+        export ANTHROPIC_API_KEY="your-anthropic-api-key"
+        ```
+
+5. Optional: Set up your GCP project details in the `config.py` file if you plan to use Gemini model:
     - Open `config.py` and set the `PROJECT_ID` and `LOCATION` variables to your GCP project ID and location.
 
     Example `config.py`:
@@ -51,12 +56,6 @@ A Streamlit application to analyze GitHub repositories and provide coding assist
     LOCATION = "your-gcp-location"
     MODEL_ID = "your-model-id"
     ```
-5. Set up your Anthropic API Key:
-    - Obtain your Anthropic [API key](https://console.anthropic.com/settings/keys) from the Anthropic platform.
-    - Set the environment variable `ANTHROPIC_API_KEY` to your Anthropic API key:
-        ```sh
-        export ANTHROPIC_API_KEY="your-anthropic-api-key"
-        ```
 
 ### Usage
 
