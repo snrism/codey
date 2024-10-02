@@ -24,7 +24,7 @@ A Streamlit application to analyze GitHub repositories and provide coding assist
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/codey.git
+    git clone https://github.com/snrism/codey.git
     cd codey
     ```
 
